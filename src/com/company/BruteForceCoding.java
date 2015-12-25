@@ -6,6 +6,8 @@ import java.io.IOException;
 
 /**
  * Created by Administrator on 2015/12/25.
+ *
+ *
  */
 public class BruteForceCoding {
     private static byte byteVal = 101; // one hundred and one
