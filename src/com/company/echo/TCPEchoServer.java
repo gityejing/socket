@@ -1,4 +1,6 @@
-package com.company;
+package com.company.echo;
+
+import com.company.echo.EchoProtocol;
 
 import java.net.*; // for Socket, ServerSocket, and InetAddress
 import java.io.*; // for IOException and Input/OutputStream

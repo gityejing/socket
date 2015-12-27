@@ -1,4 +1,6 @@
-package com.company;
+package com.company.echo;
+
+import com.company.echo.EchoProtocol;
 
 import java.io.IOException;
 import java.net.ServerSocket;

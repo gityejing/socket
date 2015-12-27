@@ -1,4 +1,4 @@
-package com.company;
+package com.company.echo;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +26,6 @@ public class EchoProtocol implements Runnable {
             OutputStream out = clntSock.getOutputStream();
 
             int recvMsgSize; // Size of received message
-            byte[] receiveBuf = new byte[BUFSIZE]; // Receive buffer
             int totalBytesEchoed = 0; // Bytes received from client
             byte[] echoBuffer = new byte[BUFSIZE]; // Receive Buffer
 
@@ -34,15 +33,11 @@ public class EchoProtocol implements Runnable {
             while ((recvMsgSize = in.read(echoBuffer)) != -1) {
                 out.write(echoBuffer, 0, recvMsgSize);
                 totalBytesEchoed += recvMsgSize;
+                System.out.println(new String(echoBuffer));
             }
 
             SocketAddress clientAddress = clntSock.getRemoteSocketAddress();
             logger.info("Client " + clientAddress + ", echoed "+ totalBytesEchoed + " bytes.");
-
-            // Receive until client closes connection, indicated by -1 return
-            while ((recvMsgSize = in.read(receiveBuf)) != -1) {
-                out.write(receiveBuf, 0, recvMsgSize);
-            }
         } catch (IOException ex) {
             logger.log(Level.WARNING, "Exception in echo protocol", ex);
         } finally {

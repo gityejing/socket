@@ -1,4 +1,4 @@
-package com.company;
+package com.company.vote;
 
 /**
  * Created by Administrator on 2015/12/25.

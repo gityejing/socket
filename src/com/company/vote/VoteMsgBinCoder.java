@@ -1,4 +1,4 @@
-package com.company;
+package com.company.vote;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.vote;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

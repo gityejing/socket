@@ -1,4 +1,4 @@
-package com.company;
+package com.company.echo;
 
 import java.net.InetAddress;
 import java.net.Socket;

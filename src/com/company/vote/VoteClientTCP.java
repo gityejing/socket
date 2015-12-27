@@ -1,4 +1,4 @@
-package com.company;
+package com.company.vote;
 
 import java.io.OutputStream;
 import java.net.Socket;

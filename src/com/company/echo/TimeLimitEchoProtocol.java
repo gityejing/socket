@@ -1,4 +1,4 @@
-package com.company;
+package com.company.echo;
 
 import java.io.IOException;
 import java.io.InputStream;
